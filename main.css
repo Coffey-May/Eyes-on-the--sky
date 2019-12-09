@@ -1,0 +1,146 @@
+ *{
+    box-sizing: border-box;
+} 
+
+
+body{
+    background-repeat: no-repeat;
+    background-image: url(./images/mars2.jpg);
+    background-size: contain; 
+    height:100vh;
+   
+    
+}
+
+ img{
+  
+    width:80px;
+    height:80px;
+   
+    
+} 
+
+h4{
+    text-align: center;
+    
+   
+  }
+  
+  h3 {
+      text-align: center;
+      line-height: 4em;
+      z-index: 2;
+      
+      
+  }
+
+  li {
+      width:25vw;
+     
+     
+  }
+
+
+.div-1-inside {
+    margin: auto;
+    
+}
+
+.h-One {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 3em;
+    font-size: 4em;
+    
+    color: rgb(253, 142, 52);
+    justify-content: center;
+   
+    
+}
+
+.h-Three {
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 199, 116);
+    justify-content: center;
+    letter-spacing: 2.1em;
+    
+    background: linear-gradient(to right,White,white,silver,black,black,silver,white,white);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+ }   
+    
+  /* .main-sections{
+    background-image: url(./images/nasa.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height:100vh;
+    width:100vw;
+    justify-content: center;
+    margin:auto;
+    
+   
+   
+}  */
+  
+/* main-sections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+/* 
+.main-sections {
+    display:inline-flexbox
+    justify-content: space-around;
+}  */
+
+.page-title {
+    text-align: center;
+}
+
+.fave-pic-section {
+    text-align: center;
+}
+
+.date-section {
+    text-align: center;
+}
+
+ .container-main {
+    justify-content: center;
+   
+    background-size: contain; 
+    height:100vh;
+    background-repeat: no-repeat;
+} 
+
+
+
+.date-section {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(8, 6, 0, 0.01),rgb(107, 42, 42, .30),rgb(206, 33, 33, .45), rgb(248, 224, 146), rgb(253, 16, 16, .45),rgb(136, 27, 27, .30),rgb(12, 12, 12, .01));
+    justify-content: center;
+    
+  
+}
+
+.nasa {
+    width:100vw;
+    height:100vh;
+}
+
+
+.photoClass {
+    display: inline-flex;
+    border: 3px solid black;
+    text-align: left;
+    
+}
+
+    
+.main-sections {
+    text-align: center;
+}
