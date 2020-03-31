@@ -1,13 +1,16 @@
- *{
+ /* *{
     box-sizing: border-box;
 } 
 
 
 body{
     background-repeat: no-repeat;
-    background-image: url(./images/mars2.jpg);
+   
+    background-image: url(./images/mars2.jpg); 
     background-size: contain; 
     height:100vh;
+    
+
    
     
 }
@@ -16,12 +19,24 @@ body{
   
     width:80px;
     height:80px;
+    
    
     
 } 
 
+h2{
+    letter-spacing: .5em;
+    background: linear-gradient(to right,rgb(26, 18, 18),rgb(20, 20, 20),rgb(20, 12, 12),rgb(10, 3, 3));
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 h4{
     text-align: center;
+    letter-spacing: .5em;
+    background: linear-gradient(to right,White,white,white,white);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
     
    
   }
@@ -40,9 +55,9 @@ h4{
      
   }
 
-
 .div-1-inside {
     margin: auto;
+    
     
 }
 
@@ -71,30 +86,7 @@ h4{
 	-webkit-text-fill-color: transparent;
  }   
     
-  /* .main-sections{
-    background-image: url(./images/nasa.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height:100vh;
-    width:100vw;
-    justify-content: center;
-    margin:auto;
-    
-   
-   
-}  */
   
-/* main-sections{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
-
-/* 
-.main-sections {
-    display:inline-flexbox
-    justify-content: space-around;
-}  */
 
 .page-title {
     text-align: center;
@@ -143,4 +135,85 @@ h4{
     
 .main-sections {
     text-align: center;
+}
+
+.POTD {
+    text-align: center;
+    color: rgb(240, 239, 238);
+    background: linear-gradient( rgb(211, 113, 74, 0.1),rgb(133, 68, 25),rgb(114, 72, 18),rgba(112, 80, 43, 0.8));
+ 
+    
+    
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #304352; /* fallback for old browsers */
+  background: #525252; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3d72b4,
+    #525252
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3d72b4,
+    #525252
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  font-family: "Julius Sans One", sans-serif;
+  width: 98%;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mars-component {
+  padding: 4px;
+  margin: 8px;
+  font-size: 13px;
+}
+.mars-main {
+  text-align: center;
+  margin: 50px;
+}
+.mars-photo-of-the-day-size {
+  width: 800px;
+  height: 500px;
+  border: 1px dotted;
+}
+.mars-video-of-the-day-size {
+  width: 800px;
+  height: 500px;
+  border: 1px dotted;
+}
+.photo-of-the-day-explanation {
+  padding: 2em;
+  margin: 2em;
+}
+.photo-info {
+  margin: 2px;
+  padding: 1px;
+}
+.size-of-mars-picture-cards {
+  max-width: 300px;
+  max-height: 200px;
+  height: 180px;
+  width: 180px;
+  border: 1px dotted;
+}
+.title {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Rock Salt", cursive;
+}
+.date {
+  position: relative;
+  left: 15px;
 }

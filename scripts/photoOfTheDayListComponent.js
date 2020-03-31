@@ -1,33 +1,30 @@
 import { usephotoOfTheDayCollection } from './PhotoofthedayProvider.js'
 
 
-import  SinglePOTDPhotoComponent  from './PhotoOfTheDayComponent.js'
-
-
 const photo1 = document.querySelector(".POTD")
-let photohtml1 =" "
+
+
 
 const photoofthedaylistComponent = () => {
     const importedPhotoOfTheDayObject = usephotoOfTheDayCollection()
-    
-    
-    for (const singlePhoto of importedPhotoOfTheDayObject.photos) {
-        const html =  SinglePOTDPhotoComponent(singlePhoto)
-        photohtml1 += html1
-    }
+   
+    photo1.innerHTML = `
 
-    // crimes.innerHTML += `
-    //     ${
-    //     criminalhtml.map(
-    //         (crime) => {
-    //             return SingleCrimainalComponent()
-    //         }
-    //     ).join(" # ")
-    //     }
-    // `
-    photo1.innerHTML += `${photohtml1}`
+   <div class="POTD"></div>
+
+      <h2>P H O T O &nbsp&nbspO F&nbsp&nbsp T H E &nbsp&nbspD A Y</h2>
+      <div>${importedPhotoOfTheDayObject.title}</div>
+      <div>${importedPhotoOfTheDayObject.date}</div>
+      <div>${importedPhotoOfTheDayObject.explanation}</div>
+      <div>${importedPhotoOfTheDayObject.media_type}</div>
+      <img src="${importedPhotoOfTheDayObject.url}">
+      
+    `
 }
 
 
 
 export default photoofthedaylistComponent
+
+
+
